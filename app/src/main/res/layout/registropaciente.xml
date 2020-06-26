@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/registropacienteXML"
+    android:layout_width="fill_parent"
+    android:layout_height="110dp"
+    android:padding="4dip">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/imgFotoPACIENTE"
+                android:layout_width="52dp"
+                android:layout_height="101dp"
+                android:layout_alignLeft="@id/TVNOMBRE_ITEM"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/logocibertec" />
+
+            <TextView
+                android:id="@+id/TVCODIGO_ITEM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVMOTIVO_ITEM"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="-69dp"
+                android:text="TVCODIGO_ITEM" />
+
+            <TextView
+                android:id="@+id/TVDNI_ITEM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="69dp"
+                android:text="TVDNI_ITEM" />
+
+            <TextView
+                android:id="@+id/TVNOMBRE_ITEM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="62dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="54dp"
+                android:text="TVNOMBRE_ITEM" />
+
+            <TextView
+                android:id="@+id/TVMOTIVO_ITEM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="79dp"
+                android:text="TVMOTIVO_ITEM" />
+
+            <TextView
+                android:id="@+id/TVDOCTOR_ITEM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="176dp"
+                android:layout_marginLeft="176dp"
+                android:layout_marginTop="6dp"
+                android:text="TVDOCTOR_ITEM" />
+
+
+            <TextView
+                android:id="@+id/TVCOSTO_ITEM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="180dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="30dp"
+                android:text="TVCOSTO_ITEM" />
+
+            <TextView
+                android:id="@+id/TVFECHA_ITEM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVNOMBRE_ITEM"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="177dp"
+                android:layout_marginLeft="177dp"
+                android:layout_marginTop="-29dp"
+                android:text="TVFECHA_ITEM"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

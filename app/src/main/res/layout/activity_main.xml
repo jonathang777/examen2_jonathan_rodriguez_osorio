@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listado de Pacientes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingClass">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDNI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DNI" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+
+        <TextView
+            android:id="@+id/TVMensajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 0 Registros localizados " />
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnConsultaPaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consultar" />
+
+        <Button
+            android:id="@+id/btnNuevoPaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnCargarDialogo_onclick"
+            android:text="Nuevo" />
+
+
+
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lvListaPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+
+
+</LinearLayout>
